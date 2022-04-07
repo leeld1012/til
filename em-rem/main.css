@@ -1,0 +1,85 @@
+@import url(/reset.css);
+
+/* font awesome */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/* web font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+h1{
+    width: 70%;
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card {
+    width: 32%;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+.container .card h2 {
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #aaa;
+    margin-bottom: 1rem;
+}
+.container .card p {
+    margin-bottom: 10%;
+    word-break: break-all;
+}
+.container .card button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: #fc0;
+    border: solid 1px rgb(234, 187, 0);
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+
+.container .card button:hover{
+    background-color: rgb(254, 222, 94);
+}
+
+.container .card button:active{
+    background-color: rgb(234, 187, 0);
+    border-color: #fc0;
+}
+
+.container .card button i {
+    position: relative;
+    top: 1px;
+}
+
+@media screen and (max-width: 60rem) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 48rem) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

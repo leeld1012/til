@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS values and units</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <!-- 📌절대단위 VS 상대단위   -->
+
+    <!-- 1. 절대적인 값: px -->
+    <!-- px로 설정시 컨텐츠 & 폰트 크기가 고정됨 → 크기 설정시 %로 설정하기를 권장함 -->
+
+    <!-- 2. 상대적인 값: em, rem, vw, vh, %  -->
+    <!--
+        em:  폰트 사이즈 단위, 부모값에 영향을 받음, %로 해도 동일값(8rem = 800%)
+        rem: 폰트 사이즈 단위, root값(최상위)에 따라 크기 결정
+        vw: 뷰포트의 가로
+        vh: 뷰포트의 세로
+        %: 부모값에 영향을 받음
+    -->
+
+    <!-- 📌 적재적소에 단위 사용하기  -->
+    <!-- 
+        1. 부모요소에 따라서 변경될 때: % em
+            브라우저 사이즈    〃         : vh vw rem
+        2. 요소의 너비나 높이   〃       : % vh vw 
+            폰트 사이즈          〃         : em rem
+    -->
+
+    <!-- 📌 em 과 rem  -->
+    <!-- 
+        em: 컴포넌트의 크기를 부모요소에 땨라 유동적으로 조절하고 싶을 때
+                폰트 사이즈가 즉각적으로 계산이 안됨
+        rem: 컴포넌트의 크기를 고정시키고 싶을 때
+
+        예시) padding: 1em 1rem> 폰트, 뷰포트 크기에 따라 유동적으로 패딩이 조절됨 
+        예시) @media screen and (max-width: 48rem):  = 768px 미디어 쿼리는 브라우저 스크린에 영향을 받기 때문에  유동적 단위로 설정하면 큰폰트 or 작은폰트로 볼때도 좀 더 유동적으로 변함
+    -->
+    
+    <h1>CSS values and units</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>🎁 TITLE</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis dignissimos ducimus accusantium quisquam optio at exercitationem magni aspernatur earum?</p>
+            <button>more <i class="fa fa-caret-right"></i></button>
+        </div>
+        <div class="card">
+            <h2>🎉 TITLE</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis dignissimos ducimus accusantium quisquam optio at exercitationem magni aspernatur earum?</p>
+            <button>more <i class="fa fa-caret-right"></i></button>
+        </div>
+        <div class="card">
+            <h2>🎈 TITLE</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis dignissimos ducimus accusantium quisquam optio at exercitationem magni aspernatur earum?</p>
+            <button>more <i class="fa fa-caret-right"></i></button>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

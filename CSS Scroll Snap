@@ -1,0 +1,6 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap
+
+fixed된 header의 menu 클릭시 header 영역 밑으로 section이 보이도록 하기
+
+원하는 대상의 CSS에 아래 코드 넣기
+scroll-margin-top: header height;
